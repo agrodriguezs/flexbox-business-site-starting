@@ -40,6 +40,7 @@ header {
     height: 95px;
     position: fixed;
     z-index: 10;
+    overflow: hidden;
 }
 header nav {
     padding: 0 20px;
@@ -68,7 +69,7 @@ header ul li a{
 }
 #logo{
     display: flex;
-    flex-direction: row;
+    flex-direction: norow;
     flex-wrap: wrap;
     align-items: center;
     padding: 10px;
@@ -81,7 +82,20 @@ header ul li a{
 #logo img {
     height: 80px;
 }
+@media only screen and (max-width: 900px) {
+    #logo h1 {
 
+        Font-Size: 2rem;
+    }
+    header ul li a{
+        font-size: 1rem;
+
+    }
+    header ul li {
+        margin: 5px;
+        list-style: none;
+    }
+}
 /* main */
 section   {
     position: relative;
